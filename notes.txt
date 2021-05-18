@@ -1,0 +1,88 @@
+    FUNCTIONS
+def newfun():
+
+the len function
+len('allen')
+
+A function object is a value you can assign to a variable or pass as an argument. For example, do_twice is a function that takes a function object as an argument and calls it twice:
+ def do_twice(f):
+    f()
+    f()
+
+Import
+ import math   --> gives you a module object called math. it contains variables and functions
+ such as: math.pi
+ but you can also use an alternative method
+ from math import pi  --> now you can access pi directly: print(pi)
+ from math import *  --> import everything
+ The disadvantage is that there might be conflicts between names defined in different modules, or between a name from a module and one of your variables.
+
+    TYPES
+None
+
+    REFACTORING
+This process—rearranging a program to improve function interfaces and facilitate code re- use—is called refactoring. In this case, we noticed that there was similar code in arc and polygon, so we “factored it out” into polyline.
+
+    DOCSTRING
+A docstring is a string at the beginning of a function that explains the interface (“doc” is
+short for “documentation”). Here is an example:
+def polyline(t, n, length, angle):
+    """Draws n line segments with the given length and
+    angle (in degrees) between them. t is a turtle.
+    """
+    codehere
+
+Occasionally, it is useful to have a body with no statements (usually as a place keeper for code you haven’t written yet). In that case, you can use the pass statement, which does nothing.
+if x < 0:
+    pass #the pass statement does nothing but allows you to continue
+elif x > y:
+    pass
+
+    INPUT
+text = input()
+fin = open('words.txt')
+>>> word = fin.readline()
+'aa\n'
+
+>>> word = line.strip()
+>>> word
+'aa'
+
+    Strings - are immutable
+>>> fruit = 'banana'
+>>> letter = fruit[1]
+
+for letter in fruit:
+    print(letter)
+
+>>> fruit = 'banana'
+>>> fruit[:3]
+'ban'
+>>> fruit[3:]
+'ana'
+
+Methods
+upper, lower, find
+By default, find starts at the beginning of the string, but it can take a second argument, the index where it should start:
+>>> word.find('na', 3)
+4
+This is an example of an optional argument; find can also take a third argument, the index where it should stop:
+>>> name = 'bob'
+>>> name.find('b', 1, 2)
+-1
+This search fails because b does not appear in the index range from 1 to 2, not including 2. Searching up to, but not including, the second index makes find consistent with the slice operator.
+
+in is a boolean operator 
+>>> 'a' in 'banana'
+True
+
+
+    LISTS - mutable
+['spam', 2.0, 5, [10, 20]]
+can use bracket operator, in operator, splice operator, + operator
+
+Methods
+lst.append('d')
+lst.extend(lst2)
+lst.sort()
+

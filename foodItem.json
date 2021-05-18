@@ -1,0 +1,16 @@
+{
+    "data": [
+        {
+            "food": "chicken",
+            "cost": 300.00,
+            "weight": 30,
+            "store": "Costco"
+        },
+        {
+            "food": "beef",
+            "cost": 400.00,
+            "weight": 50,
+            "store": "Walmart"
+        }
+    ]
+}
